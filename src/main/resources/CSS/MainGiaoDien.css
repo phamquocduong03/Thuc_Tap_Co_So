@@ -1,0 +1,16 @@
+.MenuColor {
+    -fx-background-color: linear-gradient(to bottom right, #0093E9 0%, #80D0C7 100%);
+
+}
+
+.MainColor {
+    -fx-background-color: linear-gradient(to right, #00DBDE 0%, #FC00FF 100%);
+}
+
+.RandomColor {
+    -fx-background-color: linear-gradient(to top right, #8EC5FC 0%, #E0C3FC 100%);
+}
+
+.AnchorPaneTron {
+    -fx-background-radius: 8px;
+}

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="MainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1250.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainscript.quanlytiemnet.MainController">
+    <children>
+        <BorderPane fx:id="MainSwitching" prefHeight="200.0" prefWidth="200.0" styleClass="MainColor" stylesheets="@../../CSS/MainGiaoDien.css">
+            <top>
+                <AnchorPane prefHeight="130.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <AnchorPane layoutX="14.0" layoutY="-47.0" prefHeight="130.0" prefWidth="230.0" styleClass="MenuColor" stylesheets="@../../CSS/MainGiaoDien.css" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <children>
+                                <Label layoutX="37.0" layoutY="49.0" text="Gaming Center" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="22.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="29.0" layoutY="81.0" text="Manager System" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="22.0" />
+                                    </font>
+                                </Label>
+                                <ImageView fitHeight="81.0" fitWidth="104.0" layoutX="75.0" layoutY="-9.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../Icon/TayCam.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </AnchorPane>
+                        <ScrollPane hbarPolicy="ALWAYS" layoutX="271.0" layoutY="-35.0" prefHeight="200.0" prefWidth="200.0" stylesheets="@../../CSS/Scrollbar.css" vbarPolicy="NEVER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="230.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <content>
+                                <AnchorPane fx:id="StatusPane" minHeight="0.0" minWidth="0.0" prefHeight="130.0" prefWidth="1500.0" styleClass="MainColor" stylesheets="@../../CSS/MainGiaoDien.css">
+                                    <children>
+                                        <AnchorPane layoutX="15.0" layoutY="14.0" prefHeight="86.0" prefWidth="255.0" stylesheets="@../../CSS/MainGiaoDien.css">
+                                            <styleClass>
+                                                <String fx:value="RandomColor" />
+                                                <String fx:value="AnchorPaneTron" />
+                                            </styleClass>
+                                            <children>
+                                                <ImageView fitHeight="63.0" fitWidth="87.0" layoutX="14.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../../Icon/Workstation2.png" />
+                                                    </image>
+                                                </ImageView>
+                                                <Label layoutX="83.0" layoutY="33.0" text="Số máy online:" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="System Bold" size="15.0" />
+                                                    </font>
+                                                </Label>
+                                                <Label fx:id="SoMayOnl" layoutX="199.0" layoutY="33.0" text="???" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="System Bold" size="15.0" />
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </AnchorPane>
+                                        <AnchorPane layoutX="297.0" layoutY="14.0" prefHeight="86.0" prefWidth="255.0" stylesheets="@../../CSS/MainGiaoDien.css">
+                                            <styleClass>
+                                                <String fx:value="RandomColor" />
+                                                <String fx:value="AnchorPaneTron" />
+                                            </styleClass>
+                                            <children>
+                                                <Label fx:id="SoMayCoSan" layoutX="189.0" layoutY="33.0" text="???" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="System Bold" size="15.0" />
+                                                    </font>
+                                                </Label>
+                                                <Label layoutX="68.0" layoutY="33.0" text="Số máy offline:" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="System Bold" size="15.0" />
+                                                    </font>
+                                                </Label>
+                                                <ImageView fitHeight="46.0" fitWidth="47.0" layoutX="14.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../../Icon/Workstation1.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </children>
+                                        </AnchorPane>
+                                        <AnchorPane layoutX="582.0" layoutY="14.0" prefHeight="86.0" prefWidth="255.0" stylesheets="@../../CSS/MainGiaoDien.css">
+                                            <styleClass>
+                                                <String fx:value="RandomColor" />
+                                                <String fx:value="AnchorPaneTron" />
+                                            </styleClass>
+                                            <children>
+                                                <Label fx:id="TongThoiGianHomNay" layoutX="159.0" layoutY="33.0" text="???" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="System Bold" size="15.0" />
+                                                    </font>
+                                                </Label>
+                                                <Label layoutX="68.0" layoutY="33.0" text="Thời gian:" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="System Bold" size="15.0" />
+                                                    </font>
+                                                </Label>
+                                                <ImageView fitHeight="47.0" fitWidth="55.0" layoutX="14.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../../Icon/Clock.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </children>
+                                        </AnchorPane>
+                                        <AnchorPane layoutX="867.0" layoutY="14.0" prefHeight="86.0" prefWidth="255.0" stylesheets="@../../CSS/MainGiaoDien.css">
+                                            <styleClass>
+                                                <String fx:value="RandomColor" />
+                                                <String fx:value="AnchorPaneTron" />
+                                            </styleClass>
+                                            <children>
+                                                <Label fx:id="SoMayHong" layoutX="198.0" layoutY="33.0" text="???" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="System Bold" size="15.0" />
+                                                    </font>
+                                                </Label>
+                                                <Label layoutX="70.0" layoutY="33.0" text="Số máy bị hỏng:" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="System Bold" size="15.0" />
+                                                    </font>
+                                                </Label>
+                                                <ImageView fitHeight="46.0" fitWidth="45.0" layoutX="14.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../../Icon/Error.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </children>
+                                        </AnchorPane>
+                              <AnchorPane layoutX="1156.0" layoutY="14.0" prefHeight="86.0" prefWidth="255.0" stylesheets="@../../CSS/MainGiaoDien.css">
+                                 <styleClass>
+                                    <String fx:value="RandomColor" />
+                                    <String fx:value="AnchorPaneTron" />
+                                 </styleClass>
+                                 <children>
+                                    <Label fx:id="SoMayBaoTri" layoutX="198.0" layoutY="33.0" text="???" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="81.0" layoutY="33.0" text="Đang bảo trì:" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="55.0" fitWidth="60.0" layoutX="14.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../Icon/maintenance.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </AnchorPane>
+                                    </children>
+                                </AnchorPane>
+                            </content>
+                        </ScrollPane>
+                    </children>
+                </AnchorPane>
+            </top>
+            <left>
+                <AnchorPane prefHeight="200.0" prefWidth="230.0" styleClass="MenuColor" stylesheets="@../../CSS/MainGiaoDien.css" BorderPane.alignment="CENTER">
+                    <children>
+                        <Separator layoutY="81.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                        <Label layoutX="26.0" layoutY="7.0" text="Welcome Admin" textAlignment="CENTER" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="23.0" />
+                            </font>
+                        </Label>
+                        <Separator layoutY="-1.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                        <VBox layoutY="83.0" prefHeight="387.0" prefWidth="230.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="83.0">
+                            <children>
+                                <JFXButton alignment="BASELINE_LEFT" graphicTextGap="10.0" onAction="#ChonDSKH" prefHeight="25.0" prefWidth="229.0" styleClass="Button" stylesheets="@../../CSS/ButtonXin.css" text="Danh sách tài khoản" textFill="WHITE">
+                                    <font>
+                                        <Font size="15.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="28.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../Icon/TaiKhoan.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </JFXButton>
+                                <JFXButton alignment="BASELINE_LEFT" onAction="#ChonDSMT" prefHeight="25.0" prefWidth="229.0" styleClass="Button" stylesheets="@../../CSS/ButtonXin.css" text="Danh sách máy tính" textFill="WHITE">
+                                    <font>
+                                        <Font size="15.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../Icon/computer.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </JFXButton>
+                                <JFXButton alignment="BASELINE_LEFT" graphicTextGap="7.0" onAction="#ChonTrangThaiMT" prefHeight="25.0" prefWidth="229.0" styleClass="Button" stylesheets="@../../CSS/ButtonXin.css" text="Trạng thái hoạt động" textFill="WHITE">
+                                    <font>
+                                        <Font size="15.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="31.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../Icon/status.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </JFXButton>
+                                <JFXButton alignment="BASELINE_LEFT" graphicTextGap="10.0" onAction="#ChonTK" prefHeight="25.0" prefWidth="229.0" styleClass="Button" stylesheets="@../../CSS/ButtonXin.css" text="Thống kê" textFill="WHITE">
+                                    <font>
+                                        <Font size="15.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="28.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../Icon/ThongKe.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </JFXButton>
+                                <JFXButton alignment="BASELINE_LEFT" onAction="#ChonKHTM" prefHeight="25.0" prefWidth="229.0" styleClass="Button" stylesheets="@../../CSS/ButtonXin.css" text="Khách hàng tiềm năng" textFill="WHITE">
+                                    <font>
+                                        <Font size="15.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../Icon/KHTiemNang.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </JFXButton>
+                                <JFXButton alignment="BASELINE_LEFT" graphicTextGap="8.0" onAction="#ChonDangXuat" prefHeight="25.0" prefWidth="229.0" styleClass="Button" stylesheets="@../../CSS/ButtonXin.css" text="Đăng xuất" textFill="WHITE">
+                                    <font>
+                                        <Font size="15.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="29.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../Icon/Logout.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </JFXButton>
+                            </children>
+                        </VBox>
+                  <AnchorPane layoutX="15.0" layoutY="41.0" prefHeight="36.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <children>
+                        <Label fx:id="TenAdmin" alignment="CENTER" contentDisplay="CENTER" layoutX="95.0" layoutY="1.0" prefHeight="34.0" prefWidth="123.0" text="null" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font name="System Bold" size="23.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                    </children>
+                </AnchorPane>
+            </left>
+        </BorderPane>
+    </children>
+</StackPane>
